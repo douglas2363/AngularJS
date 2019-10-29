@@ -111,7 +111,7 @@
             É invalido : {{ContatoForm.$invalid}}-->
             <form name="ContatoForm">
 
-                <input class="form-control" type="text" ng-model="contato.nome" name="nome" placeholder="Nome" ng-required="true" />
+                <input class="form-control" type="text" ng-model="contato.nome" name="nome" placeholder="Nome" ng-required="true" ng-minlength="10" />
                 <input class="form-control" type="text" ng-model="contato.telefone" name="telefone" placeholder="Telefone"
                     ng-required="true" />
                 <select class="form-control" ng-model="contato.operadora"
